@@ -13,16 +13,16 @@ Multi-process, multi-threaded optimisation engine with inter-process communicati
 ## Architecture
 
 ```
-┌────────────────────────────────────────────────────┐
-│                     Main Process                   │
-│  ┌─────────-─┐  ┌──────-────┐  ┌───────-───┐       │
-│  │ Process 1 │  │ Process 2 │  │ Process N │  ...  │
-│  └─────┬─────┘  └─────┬─────┘  └─────┬─────┘       │
-│        │              │              │             │
-│        ▼              ▼              ▼             │
-│      ObjectOutputStream (send parameters)          │
-│      ObjectInputStream  (receive results)          │
-└────────────────────────────────────────────────────┘
+┌───────────────────────────────────────────────┐
+│                     Main Process              │
+│  ┌─────────-─┐  ┌──────-────┐  ┌───────-───┐  │
+│  │ Process 1 │  │ Process 2 │  │ Process N │  │
+│  └─────┬─────┘  └─────┬─────┘  └─────┬─────┘  │
+│        │              │              │        │
+│        ▼              ▼              ▼        │
+│      ObjectOutputStream (send parameters)     │
+│      ObjectInputStream  (receive results)     │
+└───────────────────────────────────────────────┘
 
 ┌───────────────────────────────────────────────┐
 │                   Worker Process              │
