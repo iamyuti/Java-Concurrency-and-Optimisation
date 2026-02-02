@@ -30,6 +30,10 @@ Custom generic set implementations with ordering relationships and iteration sup
 | `OrdSet.java` | Interface defining ordering operations |
 | `Ordered.java` | Constraint interface for allowed orderings |
 | `Modifiable.java` | Interface for mutable operations |
+| `Bee.java` | Test class: bee observation record |
+| `HoneyBee.java` | Test class: extends Bee, implements Modifiable |
+| `WildBee.java` | Test class: wild bee with location data |
+| `Num.java` | Test class: numeric wrapper implementing Modifiable |
 
 ## Key Operations
 
