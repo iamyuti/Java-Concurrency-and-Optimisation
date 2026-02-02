@@ -51,14 +51,19 @@ Pollinator (interface)
 | `Pollinator.java` | Root interface for all pollinators |
 | `Bee.java` | Abstract base for all bees |
 | `WildBee.java` | Abstract class for wild bee species |
-| `SocialBee.java` | Social behavior mixin |
-| `SolitaryBee.java` | Solitary behavior base |
-| `CommunalBee.java` | Communal behavior base |
+| `SocialBee.java` | Abstract class for social bees |
+| `SolitaryBee.java` | Abstract class for solitary bees |
+| `CommunalBee.java` | Abstract class for communal bees |
 | `Honeybee.java` | Concrete honey bee |
 | `Bumblebee.java` | Concrete bumble bee |
-| `OsmiaCornuta.java` | Concrete mason bee |
-| `*Test.java` | Test classes for each type |
+| `OsmiaCornuta.java` | Concrete mason bee (SolitaryBee) |
+| `AndrenaBucephala.java` | Concrete mining bee (SolitaryBee) |
+| `LasioglossumCalceatum.java` | Concrete sweat bee (CommunalBee) |
+| `Wasp.java` | Concrete wasp (implements Pollinator) |
+| `FlowerFly.java` | Concrete flower fly (implements Pollinator) |
+| `Observation.java` | Record for pollinator observations |
 | `ObservationList.java` | Data structure for observations |
+| `*Test.java` | Test classes for each type |
 
 ## Test Coverage
 
