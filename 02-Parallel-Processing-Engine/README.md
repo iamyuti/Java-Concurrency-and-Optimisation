@@ -74,3 +74,28 @@ synchronized (fieldLock) {
 ```bash
 javac *.java && java Test
 ```
+
+## Example Output
+
+**Test 1: Rosenbrock 4D** (4 processes, 1 thread each)
+```
+Global minimum at (1,1,1,1) with value 0
+Found: [1.0016, 1.0025, 1.0049, 1.0096] → 9.16e-5  ✓
+Runtime: 0.670s
+```
+
+**Test 2: Himmelblau Function** (1 process, 6 threads) – with CPU-intensive computation (CPU-burn)
+```
+Global minima ~0 at: (3,2), (-2.805,3.131), (-3.779,-3.283), (3.584,-1.848)
+Found: [3.562, -1.895] → 0.065  ✓
+Runtime: 1.151s
+```
+
+**Test 3: Sine Maximum Search** (2 processes, 3 threads each)
+```
+Maximum should be 1.0 at 90°, 450°, 810°, etc.
+Found: [-1710.0°] → 1.0  ✓
+Runtime: 0.931s
+```
+
+**Total test time: 2.76s**
