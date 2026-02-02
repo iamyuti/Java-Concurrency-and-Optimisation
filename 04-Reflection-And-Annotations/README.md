@@ -46,7 +46,9 @@ public class Simulation { ... }
 |------|---------|
 | `Simulation.java` | Main simulation with annotated methods |
 | `Zusicherung.java` | Annotation for design-by-contract |
+| `Zusicherungen.java` | Container for repeatable @Zusicherung |
 | `Hauptverantwortlicher.java` | Annotation for responsibility |
+| `Komponenten.java` | Component enumeration |
 | `Bee.java` | Abstract bee with plant preferences |
 | `Plant.java` | Abstract plant with bloom periods |
 | `Set.java` | Custom set implementation |
