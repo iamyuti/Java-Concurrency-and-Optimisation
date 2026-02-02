@@ -1,4 +1,4 @@
-# Java Concurrency & Optimisation
+# Concurrency & Optimisation
 
 Advanced Java projects demonstrating parallel processing, functional programming, reflection, and generic type systems.
 
