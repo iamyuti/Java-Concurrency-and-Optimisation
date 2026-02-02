@@ -28,6 +28,8 @@ public void process(Object param) { ... }
 - `VORBEDINGUNG` - Pre-condition (must be true before execution)
 - `NACHBEDINGUNG` - Post-condition (guaranteed after execution)
 - `INVARIANTE` - Invariant (always true)
+- `SCHC` - Strengthened history constraint
+- `CCHC` - Covariant history constraint
 
 ### @Hauptverantwortlicher (Responsible)
 
